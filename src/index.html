@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <title>Form Validazione</title>
+  </head>
+  <body>
+  <div class="container">
+  <h2>Pagina di Login Utente</h2> <br>
+
+    <form id = "loginForm">
+    <div class="form-group">
+        <label for = "email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Inserisci la tua email" required>
+    </div> <br>
+
+    <div class="form-group">
+        <label for = "password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Inserisci la tua password" required>
+    </div> <br>
+
+    <button type="submit">Login con FormData</button>
+    <button type="button" id="directAccess">Login con Accesso Diretto</button>
+    </form>
+    
+    <div id="result"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
